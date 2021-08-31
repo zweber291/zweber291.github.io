@@ -1,0 +1,166 @@
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("assets/Sky.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #000;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  position: fixed;
+  height: auto;
+  left: 0;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color:#fff;
+}
+
+.name {
+  font-weight: 200;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.name .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.name .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.name .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.links, .section {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  font-weight: 200;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.links:hover {
+  text-shadow: 0 0px 5px #fff;
+}
+
+.section-subtext {
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.my-picture {
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px #fff;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  position: relative;
+}
+
+#contacthead,
+#aboutme,
+#projects,
+#musichead {
+  font-size: 75px;
+}
+
+#projects-top-link,
+#about-me-top-link,
+#music-top-link,
+#contact-top-link {
+    opacity: 0;
+    font-size: 75px;
+}
+
+#top-button {
+  position: fixed;
+  font-size: 45px;
+  opacity: 0;
+  padding-left: 15px;
+}
+
+#section1 {
+  padding-top: 330px;
+  width: 50%;
+}
+
+#contacts {
+  padding-bottom: 50px;
+}
+
+/*Scroll bar stuff*/
+/*Width*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*Track*/
+::-webkit-scrollbar-track {
+  background: #505050;
+}
+
+/*Handle*/
+::-webkit-scrollbar-thumb {
+  background: #909090;
+}
+
+/*Handle on hover*/
+::-webkit-scrollbar-thumb:hover {
+  background: #909090;
+}
+
+/*This is for the scrolling parallax background*/
+.front {
+  z-index: -10;
+  filter: brightness(75%);
+  animation: scroll 25s linear infinite;
+}
+
+.middle {
+  z-index: -15;
+  filter: brightness(75%);
+  animation: scroll 40s linear infinite;
+}
+
+.back {
+  z-index: -20;
+  filter: brightness(75%);
+  animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-1920px);}
+}
